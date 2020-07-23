@@ -1,0 +1,18 @@
+:root {
+    --active-color: #E52D27;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postContainer {
+    position: relative;;
+    width: 500px;
+    height: 500px;
+    background-color: var(--active-color);
+}
