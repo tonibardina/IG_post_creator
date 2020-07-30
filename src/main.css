@@ -1,8 +1,10 @@
 :root {
     --active-color: #E52D27;
+    --padding: 80px;
 }
 
 body {
+    margin: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,4 +17,23 @@ body {
     width: 500px;
     height: 500px;
     background-color: var(--active-color);
+}
+
+.guides {
+    position: absolute;
+    height: 100vh;
+    width: calc(500px - var(--padding));
+    border-right: 2px solid lightskyblue;
+    border-left: 2px solid lightskyblue;
+}
+
+.guides::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: calc(500px - var(--padding));
+    left: calc((var(--padding)/2 + 50vw - 250px) * -1);
+    top: calc((var(--padding)/2 + 50vh - 250px));
+    border-top: 2px solid lightskyblue;
+    border-bottom: 2px solid lightskyblue;
 }
