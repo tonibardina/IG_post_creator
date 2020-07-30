@@ -13,7 +13,7 @@ body {
 }
 
 .postContainer {
-    position: relative;;
+    position: relative;
     width: 500px;
     height: 500px;
     background-color: var(--active-color);
@@ -36,4 +36,34 @@ body {
     top: calc((var(--padding)/2 + 50vh - 250px));
     border-top: 2px solid lightskyblue;
     border-bottom: 2px solid lightskyblue;
+}
+
+.userInfo {
+    position: absolute;
+    bottom: calc(var(--padding)/2);
+    left: calc(var(--padding)/2);
+    width: 50px;
+    height: 50px;
+    background: 
+        white 
+        center 10px 
+        / 
+        contain 
+        url('../assets/userImage.png') 
+        no-repeat;
+    border-radius: 100%;
+}
+
+.rightArrow {
+    position: absolute;
+    bottom: calc(var(--padding)/2);
+    right: calc(var(--padding)/2);
+    width: 50px;
+    height: 20px;
+    background: 
+        center center 
+        / 
+        contain 
+        url('../assets/rightArrow.png') 
+        no-repeat;
 }
