@@ -1,10 +1,10 @@
 {
   "name": "IG_post_creator",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass --watch styles/main.scss src/main.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/tonibardina/IG_post_creator/issues"
   },
-  "homepage": "https://github.com/tonibardina/IG_post_creator#readme"
+  "homepage": "https://github.com/tonibardina/IG_post_creator#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
 }
